@@ -1,5 +1,50 @@
-<form method="post">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" value="Sign up">
-</form>
+<html>
+    <head>
+        <title>
+            signup
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            form { 
+                margin: 0 auto; 
+                width:250px;
+            }
+            label{
+                font-size: larger;
+                font-weight: bold;
+            }
+            span,ul{
+                display: none;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="text-center"> 
+                    <h1>Registration Form</h1> 
+              </div>
+            </div>     
+              
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 offset-3 border" style="padding: 20px;border-radius: 5px;">
+                    <table>
+                        <form action="">
+                        {{form.as_p}}
+                        {%csrf_token%}
+                        </form>
+                    </table border:2px red solid;>
+                    <div class="float-right"> 
+                        <button id="singlebutton" name="singlebutton" class="btn btn-success">Submit</button> 
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
+
+
+
