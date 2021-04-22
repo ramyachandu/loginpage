@@ -1,0 +1,5 @@
+gunicorn==19.9.0
+pillow==6.1.0
+django_heroku==0.3.1
+django==3.0.5
+dj-database-url==0.5.0
